@@ -31,5 +31,6 @@ jobs:
       uses: dorny/test-reporter@v2.5.0
       with:
         name: reports
-        path: target/surefire-reports/emailable-report.html
+        path: target/surefire-reports/*.xml
+        reporter: java-junit
 
